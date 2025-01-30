@@ -1,0 +1,432 @@
+/* ===== General Styles ===== */
+:root {
+    --bg-color: #ffffff; /* Light mode background */
+    --text-color: #333333; /* Light mode text */
+    --card-bg: #ffffff; /* Light mode card background */
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light mode card shadow */
+    --timeline-bg: #f8f9fa; /* Light mode timeline background */
+    --timeline-line: #ddd; /* Light mode timeline line */
+    --primary-color: #007bff; /* Primary color for buttons, links, etc. */
+    --accent-color: #0056b3; /* Darker shade of blue for accents */
+    --light-blue: #e6f0ff; /* Light blue for backgrounds */
+}
+
+[data-bs-theme="dark"] {
+    --bg-color: #121212; /* Dark mode background */
+    --text-color: #e0e0e0; /* Light text for dark mode */
+    --card-bg: #1e1e1e; /* Dark mode card background */
+    --card-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Dark mode card shadow */
+    --timeline-bg: #2d2d2d; /* Dark mode timeline background */
+    --timeline-line: #444; /* Dark mode timeline line */
+    --primary-color: #0d6efd; /* Dark mode primary color */
+    --accent-color: #0a58ca; /* Darker shade of blue for accents */
+    --light-blue: #1a365d; /* Dark blue for backgrounds */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 56px; /* Offset for fixed navbar */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+header {
+    padding: 100px 0;
+    background-color: var(--primary-color); /* Blue header */
+    color: white; /* White text for header */
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* ===== About Me Section ===== */
+#about {
+    background-color: var(--light-blue); /* Light blue background */
+    padding: 60px 0;
+}
+
+#about h2 {
+    color: var(--primary-color); /* Blue heading */
+}
+
+#about p {
+    color: var(--text-color); /* Dynamic text color */
+}
+
+/* ===== Education Section ===== */
+#education {
+    background-color: var(--light-blue); /* Light blue background */
+    padding: 60px 0;
+}
+
+#education h2 {
+    color: var(--primary-color); /* Blue heading */
+}
+
+#education .table {
+    background-color: var(--card-bg); /* Card background for table */
+    color: var(--text-color); /* Dynamic text color */
+}
+
+#education .table th,
+#education .table td {
+    border-color: var(--timeline-line); /* Dynamic border color */
+}
+
+/* ===== Projects Section ===== */
+#projects {
+    padding: 60px 0;
+    background-color: var(--bg-color);
+}
+
+#projects .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#projects .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -10px;
+}
+
+#projects .project-tile {
+    border: 1px solid var(--timeline-line);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--card-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+#projects .project-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow);
+}
+
+#projects .project-tile h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+#projects .project-tile p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+#projects .project-tile p:last-child {
+    margin-bottom: 0;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    #projects .project-tile {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
+/* ===== Skills Section ===== */
+section#skills {
+    padding: 60px 0;
+    background-color: var(--bg-color);
+}
+
+section#skills h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section#skills .skill-icon {
+    margin: 15px 0;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+section#skills .skill-icon i {
+    font-size: 2.5rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    color: var(--primary-color); /* Blue icons */
+}
+
+section#skills .skill-icon:hover i {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+section#skills .tool-name {
+    display: none;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    color: var(--text-color);
+    background-color: var(--card-bg);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: var(--card-shadow);
+    white-space: nowrap;
+}
+
+section#skills .skill-icon:hover .tool-name {
+    display: block;
+}
+
+/* ===== Timeline Styling ===== */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--timeline-line);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color); /* Blue dot */
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    background: var(--timeline-bg);
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    color: var(--text-color);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 55%;
+}
+
+/* ===== Footer ===== */
+footer {
+    padding: 20px 0;
+    background-color: var(--primary-color); /* Blue footer */
+    color: white; /* White text for footer */
+}
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #007bff, #00bfff); /* Gradient background */
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Profile Image */
+.profile-image {
+    border: 4px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+/* Animated Text */
+.animate__animated {
+    animation-duration: 1s;
+}
+
+.text-highlight {
+    color: #ffdd57; /* Highlight color for keywords */
+    font-weight: bold;
+}
+
+/* Social Icons */
+.social-icons a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+    color: #ffdd57 !important; /* Highlight color on hover */
+}
+
+/* Education Section */
+#education {
+    background-color: var(--light-blue); /* Light blue background */
+    padding: 60px 0;
+}
+
+#education h2 {
+    color: var(--primary-color); /* Blue heading */
+    margin-bottom: 40px;
+}
+
+/* Education List Styling */
+.education-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.education-icon {
+    font-size: 2rem;
+    color: var(--primary-color); /* Blue icon */
+    margin-right: 20px;
+}
+
+.education-details {
+    flex: 1;
+}
+
+.education-details h4 {
+    color: var(--text-color); /* Dynamic text color */
+    margin-bottom: 5px;
+}
+
+.education-details .institute {
+    color: var(--text-color); /* Dynamic text color */
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.education-details .details {
+    color: var(--text-color); /* Dynamic text color */
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+/* Divider Styling */
+.divider {
+    height: 1px;
+    background-color: var(--timeline-line); /* Dynamic line color */
+    margin: 20px 0;
+}
+
+/* Achievements Section */
+#achievements {
+    background-color: var(--light-blue); /* Light blue background */
+    padding: 60px 0;
+}
+
+#achievements h2 {
+    color: var(--primary-color); /* Blue heading */
+    margin-bottom: 40px;
+}
+
+/* Achievement Card Styling */
+.achievement-card {
+    background-color: var(--card-bg); /* Card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color); /* Blue icon */
+    margin-bottom: 15px;
+}
+
+.achievement-card h4 {
+    color: var(--text-color); /* Dynamic text color */
+    margin-bottom: 10px;
+}
+
+.achievement-card p {
+    color: var(--text-color); /* Dynamic text color */
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Hackathons Section */
+#hackathons {
+    background-color: var(--light-blue); /* Light blue background */
+    padding: 60px 0;
+}
+
+#hackathons h2 {
+    color: var(--primary-color); /* Blue heading */
+    margin-bottom: 40px;
+}
+
+/* Hackathon Card Styling */
+.hackathon-card {
+    background-color: var(--card-bg); /* Card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hackathon-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hackathon-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color); /* Blue icon */
+    margin-bottom: 15px;
+}
+
+.hackathon-card h4 {
+    color: var(--text-color); /* Dynamic text color */
+    margin-bottom: 10px;
+}
+
+.hackathon-card p {
+    color: var(--text-color); /* Dynamic text color */
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
