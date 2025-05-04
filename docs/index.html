@@ -3,42 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viral Soni - Rust Developer</title>
-    <!-- Bootstrap CSS -->
+    <title>Viral Soni - Developer Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <style>
-        /* Custom styles for dark/light mode */
-        :root {
-            --primary-dark: #0d6efd;
-            --primary-light: #0d6efd;
-        }
-
-        body {
-            background-color: var(--bs-body-bg);
-            color: var(--bs-body-color);
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .theme-toggle {
-            border: none;
-            background: none;
-            padding: 0.5rem;
-            cursor: pointer;
-        }
-
-        .theme-toggle i {
-            font-size: 1.2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Viral Soni</a>
@@ -64,384 +36,370 @@
                             <li><a class="dropdown-item" href="#contact">Contact</a></li>
                         </ul>
                     </li>
-                    <!-- Dark/Light Mode Toggle Button -->
                     <li class="nav-item">
                         <button class="theme-toggle nav-link" id="themeToggle">
-                            <i class="bi bi-moon-fill"></i> <!-- Default icon for dark mode -->
-                        </button>
+                            <i class="bi bi-moon-fill"></i> </button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-<!-- Hero Section -->
-<header class="hero-section text-center text-white py-5">
-    <div class="container">
-        <!-- Profile Image -->
-        <!-- <div class="profile-image mb-4">
-            <img src="profile.jpg" alt="Viral Soni" class="rounded-circle img-fluid" width="150">
-        </div> -->
-
-        <!-- Animated Text -->
-        <h1 class="display-4 mb-3 animate__animated animate__fadeInDown">Viral Soni</h1>
-        <p class="lead mb-2 animate__animated animate__fadeInUp animate__delay-1s">
-            Specialization in <span class="text-highlight">Rust</span>, <span class="text-highlight">Cloud</span>, <span class="text-highlight">SAP ABAP</span>
-        </p>
-        <p class="lead mb-2 animate__animated animate__fadeInUp animate__delay-2s">
-            Bachelor of Engineering in Information Technology (2023) | CGPA: <span class="text-highlight">9.31/10</span>
-        </p>
-        <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-3s">
-            +91 9967271977 | <a href="mailto:viralssoni@gmail.com" class="text-white">viralssoni@gmail.com</a>
-        </p>
-
-        <!-- Social Icons -->
-        <div class="social-icons animate__animated animate__fadeInUp animate__delay-4s">
-            <a href="https://www.linkedin.com/in/viralsoni/" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
-            <!-- <a href="#" class="text-white me-3"><i class="fab fa-github fa-2x"></i></a> -->
-            <!-- <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a> -->
+    <header id="home" class="hero-section text-center text-white py-5">
+        <div class="container">
+            <h1 class="display-4 mb-3 animate__animated animate__fadeInDown">Viral Soni</h1>
+            <p class="lead mb-2 animate__animated animate__fadeInUp animate__delay-1s">
+                Specialization in <span class="text-highlight">Python</span>, <span class="text-highlight">MySql</span>, <span class="text-highlight">Cloud</span>, <span class="text-highlight">Rust</span>
+            </p>
+            <p class="lead mb-2 animate__animated animate__fadeInUp animate__delay-2s">
+                Bachelor of Engineering in Information Technology (2023) | CGPA: <span class="text-highlight">9.31/10</span>
+            </p>
+            <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-3s">
+                +91 9967271977 | <a href="mailto:viralssoni@gmail.com" class="text-white">viralssoni@gmail.com</a>
+            </p>
+            <div class="social-icons animate__animated animate__fadeInUp animate__delay-4s">
+                <a href="https://www.linkedin.com/in/viralsoni/" target="_blank" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
         </div>
-    </div>
-</header>
+    </header>
 
-    <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">About Me</h2>
-            <p class="text-center">I am a passionate software developer with expertise in Rust, Cloud Computing, and SAP ABAP. I enjoy building scalable and efficient systems that solve real-world problems.</p>
+            <p class="text-center lead">
+                Highly motivated Software Engineer with expertise in Python, Rust, Cloud Computing (OCI), and SAP ABAP. Proven ability to develop and enhance scalable applications, automate processes, and optimize system performance. Eager to leverage technical skills and problem-solving abilities to contribute to innovative projects. Passionate about learning new technologies and building efficient, real-world solutions.
+            </p>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
+    <section id="projects" class="py-5 section-bg">
         <div class="container">
             <h2 class="text-center mb-4">Projects</h2>
-            <div class="row">
-                <!-- Project 1 -->
-                <div class="col-md-4">
-                    <div class="project-tile">
+            <div class="row gy-4">
+                 <div class="col-md-6 col-lg-4">
+                    <div class="project-tile h-100 d-flex flex-column">
+                        <h5>SL ChatBot Builder - Platform to create ChatBots</h5>
+                        <p><strong>Technologies:</strong> Python (Fast API), MySQL, React Flow</p>
+                        <p><strong>Date:</strong> March 2025</p>
+                        <p class="flex-grow-1">Developed Python FastAPIs, implemented Microservice architecture, and integrated Meta & Google APIs.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="project-tile h-100 d-flex flex-column">
+                        <h5>SL GPT - Multi Document Question Answering RAG</h5>
+                        <p><strong>Technologies:</strong> Python, Groq, GenAI, LLM</p>
+                        <p><strong>Date:</strong> Feb 2025</p>
+                        <p class="flex-grow-1">Developed RAG for document answering, optimized cost via token management, implemented embeddings & vector search.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-tile h-100 d-flex flex-column">
                         <h5>Nimus AI - Cloud Monitoring and Automation</h5>
                         <p><strong>Technologies:</strong> Rust, Javascript, Postman</p>
                         <p><strong>Date:</strong> Nov 2024</p>
-                        <p>Developed an AI platform for automating tasks in Cloud Computing Services (OCI Cloud). Executed RUST APIs for resource management in Cloud platforms.</p>
+                        <p class="flex-grow-1">Developed an AI platform for automating OCI tasks, added a resource utilization dashboard, and executed Rust APIs.</p>
                     </div>
                 </div>
-                <!-- Project 2 -->
-                <div class="col-md-4">
-                    <div class="project-tile">
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-tile h-100 d-flex flex-column">
                         <h5>Block Engine - SAP SD Contract Blocking Mechanism</h5>
                         <p><strong>Technologies:</strong> SAP ABAP</p>
                         <p><strong>Date:</strong> Jan 2024</p>
-                        <p>Developed a tool in SAP ABAP to apply blocks on Sales and Distribution Contracts (SD). Integrated logic to automate block/unblock actions based on field values.</p>
+                        <p class="flex-grow-1">Developed an SAP ABAP tool to automate blocks on SD Contracts, reducing manual intervention by 80%.</p>
                     </div>
                 </div>
-                <!-- Project 3 -->
-                <div class="col-md-4">
-                    <div class="project-tile">
-                        <h5>Contract Copilot - Contract Analyzer with Quick Search</h5>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-tile h-100 d-flex flex-column">
+                        <h5>Contract Copilot - Contract Analyzer</h5>
                         <p><strong>Technologies:</strong> AI and Python</p>
                         <p><strong>Date:</strong> Dec 2023</p>
-                        <p>Built an AI-powered platform for analyzing contracts and running queries on the extracted data using Python. Improved efficiency in legal contract analysis.</p>
+                        <p class="flex-grow-1">Built an AI platform using Python for analyzing contracts and querying extracted data, improving legal analysis efficiency.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="project-tile h-100 d-flex flex-column">
+                        <h5>Hotel Management System - ERP System</h5>
+                        <p><strong>Technologies:</strong> SAP ABAP</p>
+                        <p><strong>Date:</strong> Jul 2023</p>
+                        <p class="flex-grow-1">Developed a comprehensive SAP-based hotel management system (Master Data, Tables, Screens, Reports) with ALV Grids.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="project-tile h-100 d-flex flex-column">
+                        <h5>Raahi - Blockchain-Based Supply Chain</h5>
+                        <p><strong>Technologies:</strong> Solidity, Javascript</p>
+                        <p><strong>Date:</strong> Feb 2023</p>
+                        <p class="flex-grow-1">Designed a blockchain system for verifying and tracking supply chain products, ensuring data integrity.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="project-tile h-100 d-flex flex-column">
+                        <h5>Together We Create - Crowdfunding Platform</h5>
+                        <p><strong>Technologies:</strong> HTML, CSS, Javascript, SQL</p>
+                        <p><strong>Date:</strong> Dec 2022</p>
+                        <p class="flex-grow-1">Developed a platform connecting donors and campaigns using JS/PHP & SQL. Managed campaigns, payments, interactions.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Experience</h2>
             <div class="timeline">
-                <!-- Timeline Item 1 -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h5>Junior Associate Software Engineer:- Simple Logic IT Pvt. Ltd.</h5>
+                        <h5>Junior Associate Software Engineer</h5>
+                        <p class="company">Simple Logic IT Pvt. Ltd.</p>
                         <p><strong>Duration:</strong> Nov 2024 - Present</p>
-                        <p>Developed a Cloud Dashboard to view all active resources running on the Cloud. Enhanced API performance by 70%.</p>
+                        <ul>
+                            <li>Developed Cloud Dashboard for viewing active OCI resources.</li>
+                            <li>Enhanced API performance by 70% via code optimization.</li>
+                            <li>Improved chart plotting code performance by 90%.</li>
+                            <li>Gained proficiency in Oracle Cloud Infrastructure (OCI).</li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Timeline Item 2 -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h5>IT Specialist:- Protera Technologies</h5>
+                        <h5>IT Specialist</h5>
+                         <p class="company">Protera Technologies</p>
                         <p><strong>Duration:</strong> Mar 2024 - Sept 2024</p>
-                        <p>Configured and maintained SAP instances on the cloud. Implemented IT infrastructure automation with ServiceNow.</p>
+                        <ul>
+                            <li>Configured and maintained SAP instances on the cloud.</li>
+                            <li>Implemented IT infrastructure automation with ServiceNow.</li>
+                            <li>Improved management of cloud-hosted systems.</li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Timeline Item 3 -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h5>Associate Consultant:- Cognitus Consulting</h5>
+                        <h5>Associate Consultant</h5>
+                         <p class="company">Cognitus Consulting</p>
                         <p><strong>Duration:</strong> Jun 2023 - Feb 2024</p>
-                        <p>Designed and developed SAP ABAP Workbench for managing hotel master data, tables, and screens.</p>
+                        <ul>
+                            <li>Designed and developed SAP ABAP Workbench for hotel management.</li>
+                            <li>Implemented user authorization checks based on roles.</li>
+                            <li>Utilized SAP concepts (D logic, M logic) to enhance functionality.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Internships</h5>
+                        <p class="company">Synergy Community & Rogue Code</p>
+                        <p><strong>Duration:</strong> Nov 2020 - Mar 2021</p>
+                        <ul>
+                            <li>Contributed to marketing and business development strategies.</li>
+                             <li>Managed outreach campaigns and social media to increase engagement.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="py-5 section-bg">
         <div class="container">
             <h2 class="text-center mb-5">Skills & Expertise</h2>
-            <div class="row justify-content-center">
-                <!-- Rust -->
-                <div class="col-2 text-center skill-icon">
-                    <i class="fa-brands fa-rust" title="Rust"></i>
-                    <span class="tool-name">Rust</span>
+            <div class="row justify-content-center gy-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="skills-card">
+                        <h4 class="text-center">Languages</h4>
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <span class="skill-tag"><i class="fa-brands fa-python me-1"></i>Python</span>
+                            <span class="skill-tag"><i class="fa-brands fa-rust me-1"></i>Rust</span>
+                            <span class="skill-tag"><i class="fa-solid fa-terminal me-1"></i>Shell Script</span>
+                            <span class="skill-tag"><i class="fa-solid fa-file-code me-1"></i>C/C++</span>
+                            <span class="skill-tag"><i class="fa-brands fa-java me-1"></i>Java</span>
+                            <span class="skill-tag"><i class="fa-brands fa-js me-1"></i>JavaScript</span>
+                        </div>
+                    </div>
                 </div>
-                <!-- Python -->
-                <div class="col-2 text-center skill-icon">
-                    <i class="fa-brands fa-python" title="Python"></i>
-                    <span class="tool-name">Python</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skills-card">
+                        <h4 class="text-center">GenAI & LLM</h4>
+                         <div class="d-flex flex-wrap justify-content-center">
+                            <span class="skill-tag"><i class="fa-solid fa-brain me-1"></i>Context Embedding</span>
+                            <span class="skill-tag"><i class="fa-solid fa-magnifying-glass me-1"></i>Vector Search</span>
+                             <span class="skill-tag"><i class="fa-solid fa-robot me-1"></i>Groq</span>
+                             <span class="skill-tag"><i class="fa-solid fa-gears me-1"></i>AI Model Training</span>
+                        </div>
+                    </div>
                 </div>
-                <!-- JavaScript -->
-                <div class="col-2 text-center skill-icon">
-                    <i class="fa-brands fa-js" title="JavaScript"></i>
-                    <span class="tool-name">JavaScript</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skills-card">
+                        <h4 class="text-center">Databases</h4>
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <span class="skill-tag"><i class="fa-solid fa-database me-1"></i>SQL (MySQL, PostgreSQL)</span>
+                             <span class="skill-tag"><i class="fa-solid fa-database me-1"></i>Chroma DB</span>
+                             <span class="skill-tag"><i class="fa-solid fa-bolt me-1"></i>Query Optimization</span>
+                        </div>
+                    </div>
                 </div>
-                <!-- SAP ABAP -->
-                <div class="col-2 text-center skill-icon">
-                    <i class="fa-solid fa-briefcase" title="SAP ABAP"></i>
-                    <span class="tool-name">SAP ABAP</span>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="skills-card">
+                        <h4 class="text-center">Tools & Platforms</h4>
+                        <div class="d-flex flex-wrap justify-content-center">
+                             <span class="skill-tag"><i class="fa-solid fa-briefcase me-1"></i>SAP ABAP/Workbench</span>
+                            <span class="skill-tag"><i class="fa-brands fa-docker me-1"></i>Docker</span>
+                            <span class="skill-tag"><i class="fa-solid fa-cubes me-1"></i>Kubernetes</span>
+                            <span class="skill-tag"><i class="fa-solid fa-tools me-1"></i>ServiceNow</span>
+                             <span class="skill-tag"><i class="fa-solid fa-rocket me-1"></i>Postman</span>
+                             <span class="skill-tag"><i class="fa-solid fa-wifi me-1"></i>Wireshark</span>
+                             <span class="skill-tag"><i class="fa-solid fa-cloud me-1"></i>OCI</span>
+                        </div>
+                    </div>
                 </div>
-                <!-- Docker -->
-                <div class="col-2 text-center skill-icon">
-                    <i class="fa-brands fa-docker" title="Docker"></i>
-                    <span class="tool-name">Docker</span>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="skills-card">
+                        <h4 class="text-center">Data Visualization</h4>
+                        <div class="d-flex flex-wrap justify-content-center">
+                             <span class="skill-tag"><i class="fa-solid fa-file-excel me-1"></i>Excel</span>
+                            <span class="skill-tag"><i class="fa-solid fa-chart-line me-1"></i>Matplotlib</span>
+                            <span class="skill-tag"><i class="fa-solid fa-chart-pie me-1"></i>Chart.js</span>
+                        </div>
+                    </div>
                 </div>
-                <!-- Kubernetes -->
-                <div class="col-2 text-center skill-icon">
-                    <i class="fa-solid fa-cubes" title="Kubernetes"></i>
-                    <span class="tool-name">Kubernetes</span>
-                </div>
-                <!-- ServiceNow -->
-                <div class="col-2 text-center skill-icon">
-                    <i class="fa-solid fa-tools" title="ServiceNow"></i>
-                    <span class="tool-name">ServiceNow</span>
-                </div>
-                <!-- MongoDB -->
-                <div class="col-2 text-center skill-icon">
-                    <i class="fa-brands fa-envira" title="MongoDB"></i>
-                    <span class="tool-name">MongoDB</span>
-                </div>
-                <!-- MySQL -->
-                <div class="col-2 text-center skill-icon">
-                    <i class="fa-solid fa-database" title="MySQL"></i>
-                    <span class="tool-name">MySQL</span>
-                </div>
-                <!-- Excel -->
-                <div class="col-2 text-center skill-icon">
-                    <i class="fa-solid fa-file-excel" title="Excel"></i>
-                    <span class="tool-name">Excel</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skills-card">
+                        <h4 class="text-center">Professional Skills</h4>
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <span class="skill-tag"><i class="fa-solid fa-handshake me-1"></i>Client Management</span>
+                             <span class="skill-tag"><i class="fa-solid fa-list-check me-1"></i>Requirement Gathering</span>
+                             <span class="skill-tag"><i class="fa-solid fa-people-carry-box me-1"></i>Product Implementation</span>
+                             <span class="skill-tag"><i class="fa-solid fa-comments me-1"></i>Communication</span>
+                            <span class="skill-tag"><i class="fa-solid fa-lightbulb me-1"></i>Problem-Solving</span>
+                             <span class="skill-tag"><i class="fa-solid fa-palette me-1"></i>Creative Thinking</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-<section id="education" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Education</h2>
-        <div class="education-list">
-            <!-- List Item 1: B.E. Information Technology -->
-            <div class="education-item">
-                <div class="education-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="education-details">
-                    <h4>B.E. Information Technology</h4>
-                    <p class="institute">St. Francis Institute of Technology</p>
-                    <p class="details"><strong>CGPA:</strong> 9.31/10</p>
-                    <p class="details"><strong>Year:</strong> 2023</p>
-                </div>
-            </div>
 
-            <!-- Divider -->
-            <div class="divider"></div>
-
-            <!-- List Item 2: HSC (12th Grade) -->
-            <div class="education-item">
-                <div class="education-icon">
-                    <i class="fas fa-school"></i>
-                </div>
-                <div class="education-details">
-                    <h4>HSC (12th Grade)</h4>
-                    <p class="institute">Alpha Junior College</p>
-                    <p class="details"><strong>Marks:</strong> 65.23%</p>
-                    <p class="details"><strong>Year:</strong> 2019</p>
-                </div>
-            </div>
-
-            <!-- Divider -->
-            <div class="divider"></div>
-
-            <!-- List Item 3: SSC (10th Grade) -->
-            <div class="education-item">
-                <div class="education-icon">
-                    <i class="fas fa-book"></i>
-                </div>
-                <div class="education-details">
-                    <h4>SSC (10th Grade)</h4>
-                    <p class="institute">St. Francis ICSE School</p>
-                    <p class="details"><strong>Marks:</strong> 91.17%</p>
-                    <p class="details"><strong>Year:</strong> 2017</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Hackathons Section -->
-<section id="hackathons" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Hackathons</h2>
-        <div class="row">
-            <!-- Hackathon 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="hackathon-card">
-                    <div class="hackathon-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h4>Solving for India Hackathon by Google</h4>
-                    <p class="text-muted">Won the institute round, focusing on innovative problem-solving for India’s development.</p>
-                </div>
-            </div>
-
-            <!-- Hackathon 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="hackathon-card">
-                    <div class="hackathon-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h4>SFIT Hackathon 2023</h4>
-                    <p class="text-muted">Secured Second Runner-Up position by designing an impactful solution.</p>
-                </div>
-            </div>
-
-            <!-- Hackathon 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="hackathon-card">
-                    <div class="hackathon-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h4>Smart India Hackathon (SIH 2022)</h4>
-                    <p class="text-muted">Led a team at the national level hackathon where we developed a quick data retrieval system.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Achievements Section -->
-<section id="achievements" class="bg-light py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Achievements</h2>
-        <div class="row">
-            <!-- Achievement 1 -->
-            <div class="col-md-6 mb-4">
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h4>Developed Project for Kavach 2023</h4>
-                    <p class="text-muted">Developed a project for Kavach 2023, an initiative by the Government of India.</p>
-                </div>
-            </div>
-
-            <!-- Achievement 2 -->
-            <div class="col-md-6 mb-4">
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h4>Google Solution Challenge 2022</h4>
-                    <p class="text-muted">Submitted a solution to the Google Solution Challenge 2022, a global competition.</p>
-                </div>
-            </div>
-
-            <!-- Achievement 3 -->
-            <div class="col-md-6 mb-4">
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h4>President of ITSA</h4>
-                    <p class="text-muted">Conducted 17+ workshops as President of the Information Technology Students Association (ITSA).</p>
-                </div>
-            </div>
-
-            <!-- Achievement 4 -->
-            <div class="col-md-6 mb-4">
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h4>CodeXpert at CodeX</h4>
-                    <p class="text-muted">Served as CodeXpert at CodeX, contributing to coding challenges and mentorship.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="education" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Contact</h2>
-            <p class="text-center">Feel free to reach out to me for collaborations or opportunities!</p>
-            <p class="text-center">Email: <a href="mailto:viralssoni@gmail.com">viralssoni@gmail.com</a></p>
+            <h2 class="text-center mb-4">Education</h2>
+            <div class="education-list">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h4>B.E. Information Technology</h4>
+                        <p class="institute">St. Francis Institute of Technology</p>
+                        <p class="details"><strong>CGPA:</strong> 9.31/10 | <strong>Year:</strong> 2023</p>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-details">
+                        <h4>HSC (12th Grade)</h4>
+                        <p class="institute">Alpha Junior College</p>
+                        <p class="details"><strong>Marks:</strong> 65.23% | <strong>Year:</strong> 2019</p>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="education-details">
+                        <h4>SSC (10th Grade)</h4>
+                        <p class="institute">St. Francis ICSE School</p>
+                        <p class="details"><strong>Marks:</strong> 91.17% | <strong>Year:</strong> 2017</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="hackathons" class="py-5 section-bg">
+        <div class="container">
+            <h2 class="text-center mb-4">Hackathons & Achievements</h2>
+             <div class="row gy-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="achievement-card h-100">
+                         <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                         <h4>Solving for India Hackathon by Google</h4>
+                         <p class="text-muted">Won institute round.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="achievement-card h-100">
+                         <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                         <h4>SFIT Hackathon 2023</h4>
+                         <p class="text-muted">Second Runner-Up.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                     <div class="achievement-card h-100">
+                         <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                         <h4>Smart India Hackathon (SIH 2022)</h4>
+                         <p class="text-muted">Led team at national level.</p>
+                    </div>
+                 </div>
+                 <div class="col-md-6 col-lg-4">
+                     <div class="achievement-card h-100">
+                         <div class="achievement-icon"><i class="fas fa-shield-alt"></i></div>
+                         <h4>Kavach 2023</h4>
+                         <p class="text-muted">Developed project for Gov. of India initiative.</p>
+                     </div>
+                 </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="achievement-card h-100">
+                         <div class="achievement-icon"><i class="fab fa-google"></i></div>
+                         <h4>Google Solution Challenge 2022</h4>
+                         <p class="text-muted">Submitted solution to global competition.</p>
+                     </div>
+                 </div>
+                 <div class="col-md-6 col-lg-4">
+                     <div class="achievement-card h-100">
+                         <div class="achievement-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                         <h4>President of ITSA</h4>
+                         <p class="text-muted">Conducted 17+ workshops.</p>
+                     </div>
+                 </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="achievement-card h-100">
+                         <div class="achievement-icon"><i class="fas fa-code"></i></div>
+                         <h4>CodeXpert at CodeX</h4>
+                         <p class="text-muted">Contributed to coding challenges & mentorship.</p>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact</h2>
+            <p class="lead">Feel free to reach out for collaborations or opportunities!</p>
+            <p><i class="fas fa-envelope me-2"></i>Email: <a href="mailto:viralssoni@gmail.com">viralssoni@gmail.com</a></p>
+            <p><i class="fas fa-phone me-2"></i>Phone: <a href="tel:+919967271977">+91 9967271977</a></p>
+            <p><i class="fab fa-linkedin me-2"></i>LinkedIn: <a href="https://www.linkedin.com/in/viralsoni/" target="_blank">linkedin.com/in/viralsoni</a></p>
+        </div>
+    </section>
+
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Viral Soni. All rights reserved.</p>
+        <p>&copy; <span id="currentYear"></span> Viral Soni. All rights reserved.</p>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Dark/Light Mode Script -->
-    <script>
-        // Function to set the theme
-        function setTheme(theme) {
-            document.documentElement.setAttribute('data-bs-theme', theme);
-            localStorage.setItem('theme', theme);
-            updateToggleIcon(theme);
-        }
-
-        // Function to update the toggle icon
-        function updateToggleIcon(theme) {
-            const themeToggle = document.getElementById('themeToggle');
-            if (theme === 'dark') {
-                themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>'; // Sun icon for light mode
-            } else {
-                themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>'; // Moon icon for dark mode
-            }
-        }
-
-        // Function to toggle the theme
-        function toggleTheme() {
-            const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            setTheme(newTheme);
-        }
-
-        // Initialize theme on page load
-        (function() {
-            const savedTheme = localStorage.getItem('theme');
-            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const defaultTheme = savedTheme || (systemDark ? 'dark' : 'dark'); // Default to dark mode
-            setTheme(defaultTheme);
-        })();
-
-        // Add event listener to the toggle button
-        document.getElementById('themeToggle').addEventListener('click', toggleTheme);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
